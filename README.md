@@ -68,5 +68,9 @@ The following parameters were identified as incorrect and have been fixed to ena
 
 ## 6. Demo
 
-https://github.com/sidrocks/RL_AutonomousDriving/blob/main/sess16_autonomousdriving.mp4
+
+<img width="1787" height="955" alt="image" src="https://github.com/user-attachments/assets/6e58438d-e475-4025-bfcc-db26f8e995c2" />
+
+Video - https://youtu.be/ialezX1F15s
+
 
