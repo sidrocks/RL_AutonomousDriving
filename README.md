@@ -58,8 +58,15 @@ The following parameters were identified as incorrect and have been fixed to ena
     ```bash
     python citymap_assignment.py
     ```
-3.  **In the App**:
+3. Load either one of the maps provided - paris_citymap1, paris_citymap2
+   
+5.  **In the App**:
     *   **Left Click** on the map to place the **Car**.
     *   **Left Click** again (multiple times) to place **Targets**.
     *   **Right Click** to finish setup.
     *   Press **SPACE** or click **START** to begin training.
+
+## 6. Demo
+
+https://github.com/sidrocks/RL_AutonomousDriving/blob/main/sess16_autonomousdriving.mp4
+
