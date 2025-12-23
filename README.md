@@ -25,7 +25,7 @@ The core challenge was to tune a set of initially incorrect "broken" parameters 
 
 ## 3. Project Structure
 
-*   **`citymap_assignment.py`**: The main application file containing all components:
+*   **`citymap_assignment-v2.py`**: The main application file containing all components:
     *   **`CarBrain` Class**: Manages the physics, RL logic, memory buffers, and training loops.
     *   **`DrivingDQN` Class**: The PyTorch neural network architecture (Multi-layer Perceptron).
     *   **`NeuralNavApp` Class**: The PyQt6 GUI that renders the map, car, and charts.
@@ -56,9 +56,9 @@ The following parameters were identified as incorrect and have been fixed to ena
     ```
 2.  Run the application:
     ```bash
-    python citymap_assignment.py
+    python "citymap_assignment - v2.py"
     ```
-3. Load either one of the maps provided - paris_citymap1, paris_citymap2
+3. Load either one of the maps provided - paris_citymap1, paris_citymap2, mumbaicitymap3
    
 5.  **In the App**:
     *   **Left Click** on the map to place the **Car**.
@@ -68,9 +68,7 @@ The following parameters were identified as incorrect and have been fixed to ena
 
 ## 6. Demo
 
+<img width="1914" height="1137" alt="image" src="https://github.com/user-attachments/assets/7b24d39b-53cb-43c2-b145-fe004b2968b2" />
 
-<img width="1787" height="955" alt="image" src="https://github.com/user-attachments/assets/6e58438d-e475-4025-bfcc-db26f8e995c2" />
-
-Video - https://youtu.be/ialezX1F15s
 
 
