@@ -31,7 +31,23 @@ The core challenge was to tune a set of initially incorrect "broken" parameters 
     *   **`NeuralNavApp` Class**: The PyQt6 GUI that renders the map, car, and charts.
     *   **Physics Engine**: Handles movement, collision detection, and sensor calculations.
 
-## 4. Hyperparameter Fixes
+## 4. DQN Architecture (V2 Evolution)
+
+The V2 simulation features an upgraded **DrivingDQN** architecture. While the original model used a simpler MLP, the V2 model incorporates an additional deeper layer to handle the complexities of the Parisian radial map and cyclic navigation.
+
+### Network Layout
+- **Input Layer**: 9 nodes (7 sensors + distance + angle).
+- **Hidden Layer 1**: 128 units, ReLU activation.
+- **Hidden Layer 2**: 256 units, ReLU activation.
+- **Deeper Layer (New)**: 256 units, ReLU activation — *Added in V2 to increase representational capacity for complex city intersections.*
+- **Hidden Layer 3**: 256 units, ReLU activation.
+- **Hidden Layer 4**: 128 units, ReLU activation.
+- **Output Layer**: 5 nodes (Left, Right, Straight, Sharp Left, Sharp Right).
+
+### Why the Deeper Net?
+The addition of the extra 256-unit layer allows the network to capture higher-level spatial relationships between the 7 sensors and the cyclic target coordinates. This is particularly effective for the "Paris" map where roads radiate at different angles, requiring more nuanced steering decisions than a standard grid.
+
+## 5. Hyperparameter Fixes
 
 The following parameters were identified as incorrect and have been fixed to enable proper learning:
 
@@ -48,7 +64,7 @@ The following parameters were identified as incorrect and have been fixed to ena
 | **TAU** | RL | `0.005` | Soft update rate for the target network ensures stable learning without drastic shifts. |
 | **EPSILON** | RL | `1.0` | Starts at 100% exploration to ensure the agent discovers the map mechanics before exploiting. |
 
-## 5. How to Run
+## 6. How to Run
 
 1.  Ensure you have the required dependencies installed:
     ```bash
@@ -60,17 +76,18 @@ The following parameters were identified as incorrect and have been fixed to ena
     ```
 3. Load either one of the maps provided - paris_citymap1, paris_citymap2, mumbaicitymap3
    
-5.  **In the App**:
+4.  **In the App**:
     *   **Left Click** on the map to place the **Car**.
     *   **Left Click** again (multiple times) to place **Targets**.
     *   **Right Click** to finish setup.
     *   Press **SPACE** or click **START** to begin training.
 
-## 6. Demo
+## 7. Demo
 
 <img width="1914" height="1137" alt="image" src="https://github.com/user-attachments/assets/7b24d39b-53cb-43c2-b145-fe004b2968b2" />
 
 https://youtu.be/Q16biHWqxig
+
 
 
 
