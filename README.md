@@ -45,7 +45,7 @@ The V2 simulation features an upgraded **DrivingDQN** architecture. While the or
 - **Output Layer**: 5 nodes (Left, Right, Straight, Sharp Left, Sharp Right).
 
 ### Why the Deeper Net?
-The addition of the extra 256-unit layer allows the network to capture higher-level spatial relationships between the 7 sensors and the cyclic target coordinates. This is particularly effective for the "Paris" map where roads radiate at different angles, requiring more nuanced steering decisions than a standard grid.
+The addition of the extra 256-unit layer allows the network to capture higher-level spatial relationships between the 7 sensors and the cyclic target coordinates. This is particularly effective for the "Paris", "Mumbai" map where roads radiate at different angles, requiring more nuanced steering decisions than a standard grid.
 
 ## 5. Hyperparameter Fixes
 
@@ -87,6 +87,7 @@ The following parameters were identified as incorrect and have been fixed to ena
 <img width="1914" height="1137" alt="image" src="https://github.com/user-attachments/assets/7b24d39b-53cb-43c2-b145-fe004b2968b2" />
 
 https://youtu.be/Q16biHWqxig
+
 
 
 
