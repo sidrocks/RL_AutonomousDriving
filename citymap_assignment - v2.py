@@ -1,33 +1,3 @@
-"""
-===============================================================================
-ASSIGNMENT: FIX THE AUTONOMOUS CAR NAVIGATION
-===============================================================================
-
-Welcome Students!
-
-This code implements a self-driving car using Deep Q-Network (DQN) reinforcement learning.
-However, several critical parameters have been intentionally set to INCORRECT values
-that will prevent the car from learning properly.
-
-YOUR TASK:
-Find and fix all parameters marked with "FIX ME" comments. Use your understanding
-of reinforcement learning, neural networks, and the physics of car navigation to
-set appropriate values.
-
-HINTS:
-- Read the comments carefully - they explain what each parameter does
-- Think about reasonable ranges (e.g., learning rates are usually 0.0001 to 0.01)
-- Consider the physics (can a car sensor realistically be 1000 pixels away?)
-- Test your fixes by running the program and observing the learning behavior
-
-GRADING CRITERIA:
-1. Car successfully learns to navigate (primary goal)
-2. Appropriate hyperparameter values chosen
-3. Understanding demonstrated in comments you add
-
-Good luck! 🚗💨
-===============================================================================
-"""
 
 """
 ===============================================================================
